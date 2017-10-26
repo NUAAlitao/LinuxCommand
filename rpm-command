@@ -1,0 +1,4 @@
+1、rpm -ivh name.rpm     安装name.rpm包
+	-i：install的意思
+	-v：查看详细的安装信息
+	-h：以安装信息栏显示安装进度

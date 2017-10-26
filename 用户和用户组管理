@@ -1,0 +1,27 @@
+一、用户组操作
+	1、创建组
+		groupadd test	#增加一个test组
+	2、修改组
+		groupmod -n test2 test	#将test组的名字改为test2
+
+		groupmod -g 1005 test	#将test组的id改为1005
+	3、删除组
+		groupdel test	#删除组test
+	4、查看组
+		（1）groups	#查看当前用户所在组（groups user 查看user用户所在组）
+		（2）查看所有组 cat etc/group
+
+二、用户操作
+	1、增加用户
+		useradd test
+		passwd test		#修改test用户密码
+
+	2、修改用户
+		usermod -d /home/test -G test2 test
+		#将用户test的登录目录改为/home/test， 并将test用户加入test2组
+
+		gpasswd -a test test2	#将用户test加入到test2组
+		gpasswd -d test test2	#将用户test从test2组中移除
+
+	3、删除用户
+		userdel test

@@ -1,0 +1,14 @@
+yum的常用命令：
+1.yum check-update        列出所有可更新的软件清单
+2.yum update             安装所有更新软件
+3.yum -y install <package_name> 安装指定的软件
+4.yum update <package_name>  更新指定的软件
+5.yum list  <package_name>       不加<package_name>列出所有可安裝的软件清单，加了列出指定的
+6.yum -y remove <package_name> 删除软件
+7.yum search <package_name>   查找软件       
+8.yum list installed   列出所有已安装的软件包
+9.yum list extras    列出所有已安装但不在 Yum Repository 內的软件包
+10.yum info <package_name>  不加<package_name>列出所有软件包的信息，加了列出指定的 
+11.yum provides <package_name> 列出软件包提供哪些文件
+12.yum clean packages 清除缓存目录(/var/cache/yum)下的软件包
+13. yum clean all     清除缓存目录(/var/cache/yum)下的软件包及旧的headers
